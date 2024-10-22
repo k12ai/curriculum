@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Typezap</title>
-    <link>http://localhost:1313/</link>
+    <link>https://k12ai.education/</link>
     <description>Recent content on Typezap</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 22 Oct 2024 20:22:24 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://k12ai.education/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Syllabus Overview</title>
-      <link>http://localhost:1313/ai-syllabus/</link>
+      <link>https://k12ai.education/ai-syllabus/</link>
       <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ai-syllabus/</guid>
-      <description>&lt;h2 id=&#34;ai-syllabus-overview&#34;&gt;AI Syllabus Overview&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/ai-syllabus/grade-4/&#34;&gt;Grade 4 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/ai-syllabus/grade-5/&#34;&gt;Grade 5 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/ai-syllabus/grade-6/&#34;&gt;Grade 6 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/ai-syllabus/grade-7/&#34;&gt;Grade 7 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/ai-syllabus/grade-8/&#34;&gt;Grade 8 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/ai-syllabus/grade-9/&#34;&gt;Grade 9 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://k12ai.education/ai-syllabus/</guid>
+      <description>&lt;h2 id=&#34;ai-syllabus-overview&#34;&gt;AI Syllabus Overview&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://k12ai.education/ai-syllabus/grade-4/&#34;&gt;Grade 4 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://k12ai.education/ai-syllabus/grade-5/&#34;&gt;Grade 5 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://k12ai.education/ai-syllabus/grade-6/&#34;&gt;Grade 6 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://k12ai.education/ai-syllabus/grade-7/&#34;&gt;Grade 7 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://k12ai.education/ai-syllabus/grade-8/&#34;&gt;Grade 8 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://k12ai.education/ai-syllabus/grade-9/&#34;&gt;Grade 9 AI Syllabus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
