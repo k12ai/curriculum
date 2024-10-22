@@ -12,9 +12,9 @@ languages:
     languageName: English
     languageCode: en-US
     contentDir: content/en
-    title: Typezap
+    title: K12AI
     params:
-      description: Getting started with AI
+      description: AI and Digital Citizenship Education Initiative
 
 services:
   googleAnalytics:
