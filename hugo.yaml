@@ -38,8 +38,8 @@ params:
     dark: '#121212'
 
   years:
-    start: ''
-    present: 2023
+    start: 2024
+    present: 2024
 
   social:
     github: ''
