@@ -4,13 +4,15 @@ enableGitInfo: true
 
 defaultContentLanguage: en
 
+baseURL: https://k12ai.education
+
 languages:
   en:
     weight: 1
     languageName: English
     languageCode: en-US
     contentDir: content/en
-    title: TypeZap Eco
+    title: Typezap
     params:
       description: Getting started with AI
 
@@ -28,8 +30,8 @@ markup:
 params:
 
   author:
-    name: Wisflux Pvt. Ltd.
-    url: https://your.site
+    name: Typezap ECO
+    url: https://typezapeco.com
 
   themeColors:
     light: '#ffffff'
@@ -60,14 +62,14 @@ params:
       apiKey: ''
 
   home:
-    repository: 'your/repo'
+    repository: 'wisflux/k12ai-education'
 
 
 menu:
   main:
 
     - url: /
-      name: Homes
+      name: Home
       identifier: home
       pre: "<i class='icon icon-home'></i>"
       weight: 1
