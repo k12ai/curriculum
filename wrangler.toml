@@ -1,0 +1,8 @@
+# wrangler.toml
+name = "k12ai-curriculum" # You might want to adjust this name
+compatibility_date = "2024-05-01" # Use a recent date
+
+pages_build_output_dir = "./public"
+
+# Tell wrangler where the functions are (if any)
+# functions = "./functions" # Uncomment if you add Cloudflare Functions later 
