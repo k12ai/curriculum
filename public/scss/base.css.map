@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "base.css",
-	"sourceRoot": "/home/himanshu/workspace/typezap-docs",
+	"sourceRoot": "/home/kunal/Code/Wisflux/curriculum",
 	"sources": [
 		"themes/docura/assets/scss/base.scss",
 		"themes/docura/assets/scss/reset.scss",

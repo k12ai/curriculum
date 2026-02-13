@@ -1,0 +1,36 @@
+{{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
+
+{{ $homeStyle := "" }}
+{{ $baseStyle := "" }}
+{{ $themeStyle := "" }}
+{{ $docsearchStyle := "" }}
+
+{{ if ge hugo.Version "0.128.0" }}
+  {{ $homeStyle = resources.Get "scss/home.scss" | css.Sass $options }}
+  {{ $baseStyle = resources.Get "scss/base.scss" | css.Sass $options }}
+  {{ $themeStyle = resources.Get "scss/theme/default.scss" | css.Sass $options }}
+{{ else }}
+  {{ $homeStyle = resources.Get "scss/home.scss" | resources.ToCSS $options }}
+  {{ $baseStyle = resources.Get "scss/base.scss" | resources.ToCSS $options }}
+  {{ $themeStyle = resources.Get "scss/theme/default.scss" | resources.ToCSS $options }}
+{{ end }}
+
+{{ if .IsHome }}
+<link rel="stylesheet" href="{{ $homeStyle.RelPermalink }}" integrity="{{ $homeStyle.Data.integrity }}">
+<link rel="preload" href="{{ $baseStyle.RelPermalink }}" as="style" onload="this.rel='stylesheet'" integrity="{{ $baseStyle.Data.integrity }}">
+{{ else }}
+<link rel="stylesheet" href="{{ $baseStyle.RelPermalink }}" integrity="{{ $baseStyle.Data.integrity }}">
+{{ end }}
+
+<link rel="stylesheet" href="{{ $themeStyle.RelPermalink }}" integrity="{{ $themeStyle.Data.integrity }}">
+
+{{ $algolia := index .Site.Params.algolia .Site.Language.Lang }}
+{{ if $algolia }}
+  <link rel="preconnect" href="https://{{ $algolia.appId }}-dsn.algolia.net" crossorigin />
+  {{ if ge hugo.Version "0.128.0" }}
+    {{ $docsearchStyle = resources.Get "scss/component/docsearch.scss" | css.Sass $options }}
+  {{ else }}
+    {{ $docsearchStyle = resources.Get "scss/component/docsearch.scss" | resources.ToCSS $options }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $docsearchStyle.RelPermalink }}" integrity="{{ $docsearchStyle.Data.integrity }}"/>
+{{ end }}
