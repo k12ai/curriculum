@@ -1,0 +1,7 @@
+<header id="article-header">
+  <p class="article-kicker"><i class="ti ti-school"></i> AI Curriculum</p>
+  <h1>{{ .Title | .RenderString }}</h1>
+  {{ with .Description }}
+    <p class="article-description">{{ . }}</p>
+  {{ end }}
+</header>

@@ -1,0 +1,86 @@
+{{ define "main" }}
+{{ $grades := slice
+  (dict "title" "Grade 4" "href" "/ai-syllabus/grade-4/" "icon" "ti ti-brain" "focus" "Intelligence basics, AI in daily life, and prompt awareness.")
+  (dict "title" "Grade 5" "href" "/ai-syllabus/grade-5/" "icon" "ti ti-bulb" "focus" "AI tool categories, safer usage, and social impact.")
+  (dict "title" "Grade 6" "href" "/ai-syllabus/grade-6/" "icon" "ti ti-robot" "focus" "Problem types, data forms, and real-world AI applications.")
+  (dict "title" "Grade 7" "href" "/ai-syllabus/grade-7/" "icon" "ti ti-settings" "focus" "AI development process, speech/vision tasks, and ethics.")
+  (dict "title" "Grade 8" "href" "/ai-syllabus/grade-8/" "icon" "ti ti-chart-bubble" "focus" "Intermediate review with stronger AI-for-good framing.")
+  (dict "title" "Grade 9" "href" "/ai-syllabus/grade-9/" "icon" "ti ti-network" "focus" "Neural nets, LLM concepts, robotics, and limitations.")
+}}
+<div id="site-main-content-wrapper" class="landing-shell">
+  <main class="landing-main">
+    <section class="landing-hero">
+      <div class="landing-hero-copy">
+        <p class="landing-eyebrow"><i class="ti ti-sparkles"></i> Emmple K12 AI Curriculum</p>
+        <h1>Future-ready AI learning from Grade 4 to Grade 9</h1>
+        <p class="landing-lead">
+          A progressive curriculum that combines AI literacy, digital citizenship, and practical tool usage for schools.
+        </p>
+        <div class="landing-actions">
+          <a class="btn-primary" href="{{ "/ai-syllabus/" | relLangURL }}">
+            <i class="ti ti-book"></i> Explore Syllabus
+          </a>
+          <a class="btn-secondary" href="{{ "/ai-syllabus/grade-4/" | relLangURL }}">
+            Start at Grade 4 <i class="ti ti-arrow-right"></i>
+          </a>
+        </div>
+        <ul class="landing-metrics">
+          <li><strong>6</strong><span>Grade levels</span></li>
+          <li><strong>40+</strong><span>AI topics</span></li>
+          <li><strong>1</strong><span>Consistent learning path</span></li>
+        </ul>
+      </div>
+      <div class="landing-hero-visual">
+        <img src="{{ "/img/illustrations/ai-learning.svg" | relURL }}" alt="Illustration of students learning AI concepts">
+      </div>
+    </section>
+
+    <section class="principles-grid" aria-labelledby="ux-principles-title">
+      <h2 id="ux-principles-title">Built on education-first UX principles</h2>
+      <div class="principles-items">
+        <article class="principle-card">
+          <i class="ti ti-layers-linked"></i>
+          <h3>Progressive complexity</h3>
+          <p>Each grade builds on prior concepts so students learn AI in manageable steps.</p>
+        </article>
+        <article class="principle-card">
+          <i class="ti ti-focus-centered"></i>
+          <h3>Low cognitive load</h3>
+          <p>Clear visual hierarchy and focused sections reduce noise during teaching and self-study.</p>
+        </article>
+        <article class="principle-card">
+          <i class="ti ti-shield-check"></i>
+          <h3>Ethics by design</h3>
+          <p>Safety, fairness, and social good are integrated as core outcomes, not side notes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="grade-map" aria-labelledby="grade-map-title">
+      <div class="section-heading">
+        <h2 id="grade-map-title">Curriculum map by grade</h2>
+        <a href="{{ "/ai-syllabus/" | relLangURL }}">View complete overview <i class="ti ti-arrow-up-right"></i></a>
+      </div>
+      <div class="grade-grid">
+        {{ range $grades }}
+          <article class="grade-card">
+            <h3><i class="{{ .icon }}"></i> <a href="{{ .href | relLangURL }}">{{ .title }}</a></h3>
+            <p>{{ .focus }}</p>
+            <a class="grade-link" href="{{ .href | relLangURL }}">Open {{ .title }} <i class="ti ti-arrow-right"></i></a>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+
+    {{ with .Site.Params.home.repository }}
+      <section class="open-source-panel">
+        <div>
+          <h2>Open educational initiative</h2>
+          <p>The curriculum is maintained as a collaborative public resource.</p>
+        </div>
+        {{ partial "github-buttons" . }}
+      </section>
+    {{ end }}
+  </main>
+</div>
+{{ end }}

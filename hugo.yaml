@@ -30,8 +30,9 @@ markup:
 params:
 
   author:
-    name: Typezap ECO
-    url: https://typezapeco.com
+    name: Emmple Learning Team
+    url: https://emmple.com
+    copyrightName: Emmple
 
   themeColors:
     light: '#ffffff'

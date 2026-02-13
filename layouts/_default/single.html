@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ $dataLocale := index .Site.Data .Site.Language.Lang }}
+{{- $url := split .Permalink "/" -}}
+{{- $urlPageSlug := index $url (sub (len $url) 2) -}}
+{{ $isSectionIndex := eq $urlPageSlug .Section }}
+<div id="site-main-content-wrapper" class="curriculum-shell">
+  {{ if isset $dataLocale .Section }}
+    {{ partial "sidebar" . }}
+  {{ end }}
+  <main class="curriculum-main">
+    <article id="article" class="curriculum-article">
+      {{ partial "article-nav" . }}
+      {{ partial "article-header" . }}
+      <div id="article-content" class="curriculum-content {{ if $isSectionIndex }}curriculum-overview{{ end }}">
+        {{ $content := .Content }}
+        {{ $content = replaceRE `<a href="(https?://.+)">` `<a href="$1" target="_blank" rel="noopener noreferrer">` $content | safeHTML }}
+        {{ $content | safeHTML }}
+      </div>
+      {{ partial "article-footer" . }}
+    </article>
+    {{ partial "toc" . }}
+  </main>
+</div>
+{{ end }}

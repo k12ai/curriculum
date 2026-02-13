@@ -1,0 +1,42 @@
+<svg width="720" height="540" viewBox="0 0 720 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Students learning AI">
+  <rect width="720" height="540" rx="32" fill="url(#bgGradient)"/>
+  <circle cx="560" cy="92" r="58" fill="url(#orbA)" opacity="0.5"/>
+  <circle cx="122" cy="424" r="74" fill="url(#orbB)" opacity="0.45"/>
+
+  <rect x="78" y="88" width="564" height="364" rx="24" fill="white" fill-opacity="0.86"/>
+  <rect x="108" y="126" width="270" height="180" rx="16" fill="#E9F3FF"/>
+  <rect x="126" y="144" width="236" height="16" rx="8" fill="#93C5FD"/>
+  <rect x="126" y="174" width="170" height="12" rx="6" fill="#60A5FA"/>
+  <rect x="126" y="198" width="210" height="12" rx="6" fill="#60A5FA"/>
+  <rect x="126" y="222" width="194" height="12" rx="6" fill="#60A5FA"/>
+  <rect x="126" y="248" width="154" height="12" rx="6" fill="#60A5FA"/>
+
+  <rect x="404" y="126" width="206" height="138" rx="16" fill="#F0F9FF"/>
+  <path d="M443 185C443 166.775 457.775 152 476 152C494.225 152 509 166.775 509 185C509 203.225 494.225 218 476 218C457.775 218 443 203.225 443 185Z" fill="#DBEAFE"/>
+  <path d="M476 167L482.4 179.8L496.6 181.8L486.3 191.6L488.8 205.7L476 199.1L463.2 205.7L465.7 191.6L455.4 181.8L469.6 179.8L476 167Z" fill="#3B82F6"/>
+  <rect x="428" y="236" width="158" height="10" rx="5" fill="#BFDBFE"/>
+
+  <rect x="108" y="326" width="502" height="96" rx="16" fill="#F8FAFC"/>
+  <rect x="132" y="352" width="120" height="42" rx="12" fill="#DBEAFE"/>
+  <rect x="268" y="352" width="120" height="42" rx="12" fill="#DBEAFE"/>
+  <rect x="404" y="352" width="120" height="42" rx="12" fill="#DBEAFE"/>
+  <rect x="540" y="352" width="46" height="42" rx="12" fill="#C7D2FE"/>
+
+  <path d="M206 468C206 439.281 229.281 416 258 416H462C490.719 416 514 439.281 514 468V468H206V468Z" fill="#1E293B" fill-opacity="0.08"/>
+
+  <defs>
+    <linearGradient id="bgGradient" x1="72" y1="28" x2="676" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="0.48" stop-color="#EEF2FF"/>
+      <stop offset="1" stop-color="#DCFCE7"/>
+    </linearGradient>
+    <radialGradient id="orbA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 92) rotate(90) scale(58)">
+      <stop stop-color="#A7F3D0"/>
+      <stop offset="1" stop-color="#34D399" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(122 424) rotate(90) scale(74)">
+      <stop stop-color="#BFDBFE"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
